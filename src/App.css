@@ -17,12 +17,39 @@
 
 .product-list {
   display: flex;
+  flex-flow: row wrap;
   flex: 0 0 60%;
   justify-content: center;
-  align-items: center;
-  border: 2px solid gray;
-  height: 100vh;
   margin-top: 5px;
+}
+
+.product {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid gray;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product .title, .actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.product, .actions {
+  border-top: 1px solid gray;
+}
+
+.product, .actions button {
+  background-color: #4caf50; 
+  height: 25px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px; 
 }
 
 .cart {
@@ -31,6 +58,5 @@
   justify-content: center;
   align-items: center;
   border: 2px solid gray;
-  height: 100vh;
   margin-top: 5px;
 }
